@@ -36,4 +36,4 @@ jobs:
     - name: Run tests
       run: |
         # Add the command to run your tests. For example:
-        python -m unittest ./Test/test_unit.py
+        pytest ./Test/test_unit.py
