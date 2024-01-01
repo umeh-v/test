@@ -13,12 +13,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        fetch-depth: 2  # Fetch the last a two commits. You can adjust this as needed.a
+        fetch-depth: 2  # Fetch the last a two commits. 
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'  # Replace this with the version of Python you're using.
+        python-version: '3.8'  
 
     - name : Install Packages 
       run : pip install pytest
@@ -27,7 +27,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        # If you need additional dependencies for tests you can install them here.
+        
 
     - name: Run tests
       run: python -m unittest discover
