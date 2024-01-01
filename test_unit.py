@@ -59,7 +59,7 @@ class TestMLPipeline(unittest.TestCase):
         accuracy = accuracy_score(y_val, y_val_pred)
         self.assertTrue(0 <= accuracy <= 1)
 
-        # Evaluate using classification report (additional check)
+        # Evaluate using classification report (additional check) real
         report = classification_report(y_val, y_val_pred, output_dict=True)
         self.assertIn('accuracy', report)
 
