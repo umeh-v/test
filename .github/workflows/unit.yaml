@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        fetch-depth: 2  # Fetch the last two commits. You can adjust this as needed.
+        fetch-depth: 2  # Fetch the last a two commits. You can adjust this as needed.
 
     - name: Set up Python
       uses: actions/setup-python@v2
