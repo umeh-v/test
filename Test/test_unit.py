@@ -14,8 +14,8 @@ class TestMLPipeline(unittest.TestCase):
     def setUpClass(cls):
 
         # Load the dataset
-        cls.train_dataset = pd.read_csv('sampled_test_dataset.csv')
-        cls.test_dataset = pd.read_csv('sampled_test_dataset.csv')
+        cls.train_dataset = pd.read_csv('./Test/sampled_train_dataset.csv')
+        cls.test_dataset = pd.read_csv('./Test/sampled_test_dataset.csv')
         
 
     def test_label_encoding(self):
