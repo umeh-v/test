@@ -1,8 +1,9 @@
 name: Python application test with GitHub Actions
+# run-name: ${{ github.actor }} workflow test
 
 on:
-  push:
-    branches: [ main ]
+   push:
+       branches: [ main ]
 
 jobs:
   build:
