@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        fetch-depth: 2  # Fetch the last a two commits. 
+        fetch-depth: 2  # Fetch the last a two commits. vinny test
 
     - name: Set up Python
       uses: actions/setup-python@v2
