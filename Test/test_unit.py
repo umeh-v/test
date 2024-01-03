@@ -26,7 +26,7 @@ class TestMLPipeline(unittest.TestCase):
 
     def test_label_encoding(self):
         label_encoder = LabelEncoder()
-        # Fit the encoder on the training dataset hi
+        # Fit the encoder on the training dataset 
         self.train_dataset['Activity'] = label_encoder.fit_transform(self.train_dataset['Activity'])
         # Now transform the test dataset
         try:
@@ -59,7 +59,7 @@ class TestMLPipeline(unittest.TestCase):
         accuracy = accuracy_score(y_val, y_val_pred)
         self.assertTrue(0 <= accuracy <= 1)
 
-        # Evaluate using classification report (additional check) real
+        # Evaluate using classification report (additional check) 
         report = classification_report(y_val, y_val_pred, output_dict=True)
         self.assertIn('accuracy', report)
 
