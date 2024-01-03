@@ -13,7 +13,7 @@ class TestMLPipeline(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
 
-        # Load the dataset
+        # Load the smaller dataset
         cls.train_dataset = pd.read_csv('./Test/sampled_train_dataset.csv')
         cls.test_dataset = pd.read_csv('./Test/sampled_test_dataset.csv')
         
@@ -26,7 +26,7 @@ class TestMLPipeline(unittest.TestCase):
 
     def test_label_encoding(self):
         label_encoder = LabelEncoder()
-        # Fit the encoder on the training dataset
+        # Fit the encoder on the training dataset hi
         self.train_dataset['Activity'] = label_encoder.fit_transform(self.train_dataset['Activity'])
         # Now transform the test dataset
         try:
